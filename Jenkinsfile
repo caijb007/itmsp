@@ -9,9 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''yum install pip
-'''
-        sh 'yum insall python-devel'
+        sh 'pip list'
       }
     }
   }
