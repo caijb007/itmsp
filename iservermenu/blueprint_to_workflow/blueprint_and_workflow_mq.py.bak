@@ -1,0 +1,374 @@
+# coding: utf-8
+# Author: Chery huo
+
+
+from multiprocessing import Process
+import json
+import requests
+from datetime import datetime
+from iconfig.models import BlueEngineTask
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from itmsp.settings import LOCAL_HOST, LOCAL_PORT
+from itmsp.utils.decorators import post_data_to_dict
+from iservermenu.models import Button
+from iservermenu.blueprint_to_workflow.tools import return_dict_value
+
+import  time
+@api_view(['POST'])
+def bwmq_api(request):
+    """
+    用来接收请求和循环调用蓝图和流程等接口
+    :param request:
+    :return:
+    """
+
+    req_data = request.data
+
+    # PORT = "8879"
+    PORT = LOCAL_PORT
+    blue_relative_url = "/iconfig/blue-engine-query/"
+    process_agree_relative_url = "/iworkflow/taskinstance/agree_interface/"
+    process_over_relative_url = "/iworkflow/pinstance/process_over/"
+
+    process_ins_error_relative_url = "/iworkflow/taskinstance/process-ins-error/"
+    req_data = post_data_to_dict(request.data)
+
+    authorization = request.META.get('HTTP_AUTHORIZATION')  # token 76e25c7f4265592a44f258261180a175f20912d4
+    headers = {'content-type': 'application/json', "authorization": authorization}
+    base_url = "http://" + LOCAL_HOST + ":" + PORT
+    blue_url = "http://" + LOCAL_HOST + ":" + PORT + blue_relative_url
+    process_agree_url = "http://" + LOCAL_HOST + ":" + PORT + process_agree_relative_url
+    process_over_url = "http://" + LOCAL_HOST + ":" + PORT + process_over_relative_url
+    process_ins_error_url = "http://" + LOCAL_HOST + ":" + PORT + process_ins_error_relative_url
+
+    # 调用蓝图的接口
+    blue_func_req = transfer_bp(url=blue_url, headers=headers, req_data=req_data)
+    if blue_func_req['status'] == -1:  # 函数调用失败
+        return Response({"status": -1, "msg": "调用蓝图的接口失败", 'data': []})
+    elif blue_func_req['status'] == 1:  # 函数调用成功
+        ret_data = blue_func_req['data']
+        if not ret_data:
+            return Response({"status": -1, "msg": "调用蓝图的接口返回值为空", 'data': []})
+        blue_print_info_dict = ret_data.get('blue_print_info')
+
+
+
+        while blue_print_info_dict['blue_status'] ==1:
+            print "蓝图sss正在执行中"
+            blue_func_req = transfer_bp(url=blue_url, headers=headers, req_data=req_data)
+            time.sleep(3) # 3秒发送
+            ret_data = blue_func_req['data']
+            if not ret_data:
+                return Response({"status": -1, "msg": "调用蓝图的接口返回值为空", 'data': []})
+            blue_print_info_dict = ret_data.get('blue_print_info')
+
+        if blue_print_info_dict['blue_status'] == 3:  # 调用流程异常的接口
+            # 调用流程异常的接口
+            req_data['blue_print_info'] = blue_print_info_dict
+            process_error_func_req = transfer_workflow_error_process(url=process_ins_error_url, headers=headers,
+                                                                     req_data=req_data)
+            if process_error_func_req['status'] == -1:
+                return Response({"status": -1, "msg": "调用流程异常接口返回值为失败", 'data': process_error_func_req})
+            elif process_error_func_req['status'] == 1:  # 同意成功就可以结束进程了
+                return Response({"status": 1, "msg": "调用流程异常接口返回值为成功", 'data': process_error_func_req['data']})
+            # return Response({"status": -1, "msg": "蓝图状态异常", 'data': blue_func_req})
+
+
+        elif blue_print_info_dict['blue_status'] == 2:  # 蓝图状态已经完成了
+
+            req_data['blue_print_info'] = blue_print_info_dict
+            # print "蓝图状态已经完成了"
+            # print req_data
+            # print "蓝图状态已经完成了"
+            business_info_dict = ret_data.get('business_data')  # 业务数据字典
+            if not business_info_dict:
+                return Response({"status": -1, "msg": "业务数据回写失败,调用失败", 'data': []})
+            business_info_dict['submit_result'] = blue_print_info_dict.get('result_data')
+            req_data['business_data'] = business_info_dict  # 重写 业务数据
+            # print "重写 业务数据"
+            # print req_data
+            # print "重写 业务数据"
+            process_func_req = transfer_workflow_agree(url=process_agree_url, headers=headers, req_data=req_data)
+            # print process_func_req
+            if process_func_req['status'] == -1:
+                return Response({"status": -1, "msg": "调用流程同意接口返回值为失败", 'data': []})
+            elif process_func_req['status'] == 1:  # 同意成功就可以结束进程了
+                req_data = process_func_req['data']
+
+                # print "同意接口返回"
+                # print req_data
+                # print "同意接口返回"
+                process_ins_over_req = transfer_workflow_over_process(url=process_over_url, headers=headers,
+                                                                      req_data=req_data)
+                if process_ins_over_req['status'] == -1:
+                    return Response({"status": -1, "msg": "调用流程结束接口返回值为失败", 'data': []})
+                elif process_ins_over_req['status'] == 1:  # 结束接口返回值成功
+                    finish_data = process_ins_over_req['data']['data']
+
+                    # 然后调用业务写入接口
+                    finish_req = data_analysis_and_data_write_back(req_data=finish_data, base_url=base_url,
+                                                                   headers=headers)
+
+                    if finish_req['status'] == -1:
+                        finish_ret = finish_req['data']
+                        return Response({"status": -1, "msg": "调用业务数据回写接口返回值为失败", 'data': finish_ret})
+                    if finish_req['status'] == 1:
+                        finish_ret = finish_req['data']
+                        return Response({"status": 1, "msg": "调用业务数据回写接口返回值为成功", 'data': finish_ret})
+                    return Response({"status": 1, "msg": "调用流程结束接口返回值为成功", 'data': req_data})
+
+                return Response({"status": 1, "msg": "调用流程同意接口返回成功", 'data': process_func_req})
+            return Response({"status": 1, "msg": "此接口成功", 'data': req_data})
+        # return Response({"status": 1, "msg": "此接口成功", 'data': blue_func_req})
+
+        return Response({"status": 1, "msg": "哈哈哈哈", 'data': blue_func_req})
+
+
+def transfer_bp(url, headers, req_data):
+    """
+    调用蓝图的查询接口
+    :param url:
+    :param req_data:
+    :return:
+    """
+
+    # print req_data , type(req_data)
+
+    blue_print_info_dict = req_data.get("blue_print_info")
+
+    blue_instance_number = blue_print_info_dict.get("blue_instance_number")
+    # print blue_instance_number
+    blue_instance_params_list = ["result_data", "blue_instance_number"]
+    msg_prefix = u"调用蓝图的查询接口"
+    print u"调用蓝图的查询接口"
+    try:
+        data1 = {"blue_instance_number": blue_instance_number,
+                 "blue_instance_params": blue_instance_params_list}  # 这就是一个str, 如果用赋值的方式就是一个列表,不知为何
+        print data1
+        r = requests.post(url=url, headers=headers, data=json.dumps(data1))
+        print r.status_code
+        if r.raise_for_status():
+            return r.raise_for_status()
+
+        if r.json():
+            return_data = r.json()
+            if return_data['status'] == -1:
+                return {"status": -1, "msg": "调用失败", "data": return_data}
+            elif return_data['status'] == 1:
+                blue_print_dict = {
+                    "blue_ins_number": blue_instance_number,
+                    "blue_result": return_data['data']
+                }
+                # req_data['blue_print_info'] = blue_print_dict
+                req_data['blue_print_info'] = return_data['data']
+                # json_data = json.dumps(req_data)
+                return {"status": 1, "msg": "调用成功", "data": req_data}
+
+    except Exception, e:
+        msg = msg_prefix + "失败，错误信息：" + unicode(e)
+        return {"status": -1, "msg": msg, "data": []}
+
+
+def transfer_workflow_agree(url, headers, req_data):
+    """
+    调用流程节点同意接口
+    :param url:
+    :param req_data:
+    :return:
+    """
+
+    msg_prefix = "调用流程节点同意接口"
+
+    # req_data = req_data)
+    # print req_data
+
+    # map_relation_dict = req_data.get("map_relation")  # 映射信息
+    # if not map_relation_dict:
+    #     msg = msg_prefix + u"失败，当前映射关系无效"
+    #     return Response({"status": -1, "msg": msg, "data": []})
+    try:
+        r = requests.post(url=url, headers=headers, data=json.dumps(req_data))
+        # print "dsadsadasdsaa"
+        # print r.json()
+        if r.raise_for_status():
+            return r.raise_for_status()
+
+        if r.json():
+            return_data = r.json()
+            if return_data['status'] == -1:
+                return {"status": -1, "msg": "流程同意接口操作失败", "data": return_data}
+            elif return_data['status'] == 1:
+                # blue_print_dict = {
+                #     "blue_ins_number": blue_instance_number,
+                #     "blue_result": return_data['data']
+                # }
+                # req_data['blue_print_info'] = blue_print_dict
+                # req_data['blue_print_info'] = return_data['data']
+
+                return {"status": 1, "msg": "流程同意接口操作成功", "data": return_data}
+    except Exception, e:
+        msg = msg_prefix + "失败，错误信息：" + unicode(e)
+        return {"status": -1, "msg": msg, "data": []}
+
+    # return {"status": 1, 'msg': 'Interface is Ok', 'data': []}
+
+
+def transfer_workflow_refuse(url, headers, req_data):
+    """
+    调用流程节点拒绝接口
+    :param url:
+    :param req_data:
+    :return:
+    """
+    # url = "http://118.240.13.50:8879/iconfig/blue-engine-query"
+    # # req_req = requests.post()
+    # headers = {'Connection': 'close', "authorization": request.META.get('HTTP_AUTHORIZATION')}
+    #
+    # data = {"blue_instance_number": blue_instance_number, "blue_instance_params": "result_data"}
+    # req_req = requests.post(url, data=data, headers=headers)
+    msg_prefix = "调用流程节点拒绝接口"
+    try:
+        req_data = req_data['data']
+        r = requests.post(url=url, headers=headers, data=json.dumps(req_data))
+        # print r.json()
+        if r.raise_for_status():
+            return r.raise_for_status()
+
+        if r.json():
+            return_data = r.json()
+            if return_data['status'] == -1:
+                return {"status": -1, "msg": "流程拒绝接口操作失败", "data": return_data}
+            elif return_data['status'] == 1:
+                # blue_print_dict = {
+                #     "blue_ins_number": blue_instance_number,
+                #     "blue_result": return_data['data']
+                # }
+                # req_data['blue_print_info'] = blue_print_dict
+                # req_data['blue_print_info'] = return_data['data']
+
+                return {"status": 1, "msg": "流程拒绝接口操作成功", "data": return_data}
+    except Exception, e:
+        msg = msg_prefix + "失败，错误信息：" + unicode(e)
+        return {"status": -1, "msg": msg, "data": []}
+
+
+def transfer_workflow_over_process(url, headers, req_data):
+    """
+    调用流程节点结束接口
+    :param url:
+    :param req_data:
+    :return:
+    """
+    msg_prefix = "调用流程节点结束接口"
+    try:
+        req_data = req_data['data']
+        r = requests.post(url=url, headers=headers, data=json.dumps(req_data))
+        # print r.json()
+        if r.raise_for_status():
+            return r.raise_for_status()
+
+        if r.json():
+            return_data = r.json()
+            if return_data['status'] == -1:
+                return {"status": -1, "msg": "流程结束接口操作失败", "data": return_data}
+            elif return_data['status'] == 1:
+                # blue_print_dict = {
+                #     "blue_ins_number": blue_instance_number,
+                #     "blue_result": return_data['data']
+                # }
+                # req_data['blue_print_info'] = blue_print_dict
+                # req_data['blue_print_info'] = return_data['data']
+
+                return {"status": 1, "msg": "流程结束接口操作成功", "data": return_data}
+    except Exception, e:
+        msg = msg_prefix + "失败，错误信息：" + unicode(e)
+        return {"status": -1, "msg": msg, "data": []}
+
+
+def transfer_workflow_error_process(url, headers, req_data):
+    """
+    调用流程节点异常接口
+    :param url:
+    :param req_data:
+    :return:
+    """
+    # url = "http://118.240.13.50:8879/iconfig/blue-engine-query"
+    # # req_req = requests.post()
+    # headers = {'Connection': 'close', "authorization": request.META.get('HTTP_AUTHORIZATION')}
+    #
+    # data = {"blue_instance_number": blue_instance_number, "blue_instance_params": "result_data"}
+    # req_req = requests.post(url, data=data, headers=headers)
+    msg_prefix = "调用流程异常接口"
+    try:
+        req_data = req_data
+        # print req_data
+        r = requests.post(url=url, headers=headers, data=json.dumps(req_data))
+        #
+
+        # print " 调用流程异常接口返回"
+        # print r.json()
+        # print " 调用流程异常接口返回"
+        if r.raise_for_status():
+            return r.raise_for_status()
+
+        if r.json():
+            return_data = r.json()
+            if return_data['status'] == -1:
+                return {"status": -1, "msg": "流程异常接口操作失败", "data": return_data}
+            elif return_data['status'] == 1:
+                # blue_print_dict = {
+                #     "blue_ins_number": blue_instance_number,
+                #     "blue_result": return_data['data']
+                # }
+                # req_data['blue_print_info'] = blue_print_dict
+                # req_data['blue_print_info'] = return_data['data']
+
+                return {"status": 1, "msg": "流程异常接口操作成功", "data": return_data}
+    except Exception, e:
+        msg = msg_prefix + "失败，错误信息：" + unicode(e)
+        return {"status": -1, "msg": msg, "data": []}
+
+
+def data_analysis_and_data_write_back(req_data, base_url, headers):
+    req_data1 = req_data
+    print "*" * 120
+    print req_data
+    print "*" * 120
+    map_relation_dict = req_data.get("map_relation")
+    msg_prefix = u"数据分析和数据回写"
+    try:
+        if not map_relation_dict:
+            raise Exception("无映射关系信息")
+        synthesize_code = map_relation_dict.get("synthesize_code")
+        button_ins = Button.objects.filter(composite_code=synthesize_code).first()
+        server_key = button_ins.page.server.description
+        if not server_key:
+            raise Exception("无服务表记录，无法回写数据")
+        relative_url = return_dict_value(server_key)  # 拿到相对路径
+        if not relative_url:
+            raise Exception("查不到路径，无法回写数据")
+        print relative_url
+        com_url = base_url + relative_url
+        if not relative_url:
+            raise Exception("查不到url，无法回写数据")
+        print com_url
+        r = requests.post(url=com_url, headers=headers, data=json.dumps(req_data1))
+        if r.raise_for_status():
+            return r.raise_for_status()
+        if r.json():
+            return_data = r.json()
+            if return_data['status'] == -1:
+                return {"status": -1, "msg": "业务回写接口操作失败", "data": return_data}
+            elif return_data['status'] == 1:
+                # blue_print_dict = {
+                #     "blue_ins_number": blue_instance_number,
+                #     "blue_result": return_data['data']
+                # }
+                # req_data['blue_print_info'] = blue_print_dict
+                # req_data['blue_print_info'] = return_data['data']
+
+                return {"status": 1, "msg": "业务回写接口操作成功", "data": return_data}
+    except Exception, e:
+        msg = msg_prefix + "失败，错误信息：" + unicode(e)
+        return {"status": -1, "msg": msg, "data": []}

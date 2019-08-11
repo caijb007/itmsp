@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/iconfig/blue_engine/blue_engine.py" line="42" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6cd9ec9f-791e-44e9-8b7c-570473bdb126" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/build/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iconfig/blue_engine/blue_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/iconfig/blue_engine/blue_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iconfig/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iconfig/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iservermenu/blueprint_to_workflow/blueprint_and_workflow_mq.py" beforeDir="false" afterPath="$PROJECT_DIR$/iservermenu/blueprint_to_workflow/blueprint_and_workflow_mq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iservermenu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iservermenu/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iservermenu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iservermenu/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itmsp_uat.conf" beforeDir="false" afterPath="$PROJECT_DIR$/itmsp_uat.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ivmware/app_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/ivmware/app_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ivmware/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ivmware/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ivmware/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/ivmware/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iworkflow/workflow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iworkflow/workflow/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/itmsp$blue_engine.coverage" NAME="blue_engine Coverage Results" MODIFIED="1559789034850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iconfig/blue_engine" />
+    <SUITE FILE_PATH="coverage/itmsp$manage.coverage" NAME="manage Coverage Results" MODIFIED="1559790825797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itmsp_hd@118.240.13.50" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itmsp_ld@118.240.13.50" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iworkflow/workflow/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="132" selection-start-line="132" selection-end-line="132" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ivmware/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="140" column="14" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/build.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="celery.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/itmsp/celery.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding>
+                <element signature="e#36#74#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="startup.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startup.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="11" selection-start-column="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ivmware/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app_view.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ivmware/app_view.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2769">
+              <caret line="352" column="56" lean-forward="true" selection-start-line="352" selection-start-column="56" selection-end-line="352" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iworkflow/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="119" column="13" selection-start-line="119" selection-start-column="4" selection-end-line="119" selection-end-column="13" />
+              <folding>
+                <element signature="e#44#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ind</find>
+      <find>time</find>
+      <find>find-process-server-page</find>
+      <find>dit-matching-rule</find>
+      <find>approve</find>
+      <find>ip</find>
+      <find>update</find>
+      <find>拒绝</find>
+      <find>BlueAccessModuleParamsInstance</find>
+      <find>restart</find>
+      <find>agreee</find>
+      <find>over</find>
+      <find>task_blue_note_execute</find>
+      <find>PORT</find>
+      <find>8879</find>
+      <find>my</find>
+      <find>show</find>
+      <find>blue_note_instance</find>
+      <find>task_blue_instance_execute</find>
+      <find>get_out_blue_data_and_format_data</find>
+      <find>set</find>
+      <find>instance_p</find>
+      <find>agree</find>
+      <find>调用蓝图的接口</find>
+      <find>start_</find>
+      <find>阿哥热娥</find>
+      <find>dsadsadasdsaa</find>
+      <find>blue_instance_number = blue_print_info_dict.get(&quot;blue_instance_number&quot;)</find>
+      <find>error</find>
+      <find>fix_wrong_node_task</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test.json" />
+        <option value="$PROJECT_DIR$/iconfig/blue_engine/utils.py" />
+        <option value="$PROJECT_DIR$/iconfig/task.py" />
+        <option value="$PROJECT_DIR$/iconfig/task1.py" />
+        <option value="$PROJECT_DIR$/itmsp/__init__.py" />
+        <option value="$PROJECT_DIR$/itmsp/utils/blueengineinstance.json" />
+        <option value="$PROJECT_DIR$/itmsp/utils/blueenginenode.json" />
+        <option value="$PROJECT_DIR$/itmsp/utils/blueenginetask.json" />
+        <option value="$PROJECT_DIR$/iconfig/views.py" />
+        <option value="$PROJECT_DIR$/iworkflow/business/views.py" />
+        <option value="$PROJECT_DIR$/iworkflow/admin.py" />
+        <option value="$PROJECT_DIR$/iworkflow/workflow/serializers.py" />
+        <option value="$PROJECT_DIR$/iconfig/serializers.py" />
+        <option value="$PROJECT_DIR$/itmsp/urls.py" />
+        <option value="$PROJECT_DIR$/iuser/models.py" />
+        <option value="$PROJECT_DIR$/iconfig/models.py" />
+        <option value="$PROJECT_DIR$/ivmware/managers.py" />
+        <option value="$PROJECT_DIR$/ivmware/views.py" />
+        <option value="$PROJECT_DIR$/ivmware/urls.py" />
+        <option value="$PROJECT_DIR$/itmsp/utils/iworkflow.json" />
+        <option value="$PROJECT_DIR$/iservermenu/models.py" />
+        <option value="$PROJECT_DIR$/iworkflow/models.py" />
+        <option value="$PROJECT_DIR$/iservermenu/blueprint_to_workflow/tools.py" />
+        <option value="$PROJECT_DIR$/iservermenu/utils.py" />
+        <option value="$PROJECT_DIR$/itmsp/utils/iservermenu.json" />
+        <option value="$PROJECT_DIR$/iconfig/blue_engine/blue_logger.py" />
+        <option value="$PROJECT_DIR$/iservermenu/serializers.py" />
+        <option value="$PROJECT_DIR$/iconfig/blue_instance_api/blue_instance_api.py" />
+        <option value="$PROJECT_DIR$/iconfig/tasks.py" />
+        <option value="$PROJECT_DIR$/iworkflow/business/models.py" />
+        <option value="$PROJECT_DIR$/itmsp.conf" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/itmsp/celery.py" />
+        <option value="$PROJECT_DIR$/itmsp/settings.py" />
+        <option value="$PROJECT_DIR$/iservermenu/urls.py" />
+        <option value="&lt;107c04d6-33ba-4149-b25c-b78123b553d2&gt;/tmp/jenkins/itmsp/267/ivmware/app_view.py" />
+        <option value="&lt;107c04d6-33ba-4149-b25c-b78123b553d2&gt;/tmp/jenkins/itmsp/267/iservermenu/blueprint_to_workflow/blueprint_and_workflow_mq.py" />
+        <option value="&lt;107c04d6-33ba-4149-b25c-b78123b553d2&gt;/tmp/jenkins/itmsp/267/iworkflow/workflow/views.py" />
+        <option value="$PROJECT_DIR$/itmsp/utils/fields.py" />
+        <option value="$PROJECT_DIR$/iservermenu/blueprint_to_workflow/blueprint_and_workflow_mq.py" />
+        <option value="$PROJECT_DIR$/iconfig/urls.py" />
+        <option value="$PROJECT_DIR$/iconfig/blue_engine/blue_engine.py" />
+        <option value="$PROJECT_DIR$/iservermenu/views.py" />
+        <option value="$PROJECT_DIR$/iworkflow/workflow/views.py" />
+        <option value="$PROJECT_DIR$/ivmware/models.py" />
+        <option value="$PROJECT_DIR$/ivmware/serializers.py" />
+        <option value="$PROJECT_DIR$/ivmware/app_view.py" />
+        <option value="$PROJECT_DIR$/build/Dockerfile" />
+        <option value="$PROJECT_DIR$/startup.sh" />
+        <option value="$PROJECT_DIR$/build/build.sh" />
+        <option value="$PROJECT_DIR$/setup.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="9" />
+    <option name="y" value="208" />
+    <option name="width" value="1311" />
+    <option name="height" value="870" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="itmsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="itmsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="itmsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="itmsp" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="itmsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="itmsp" type="462c0819:PsiDirectoryNode" />
+              <item name="itmsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/project/itmsp/iconfig/blue_engine/blue_logger.py&#10;avaliable_node_sort&#9;null&#9;null&#10;order&#9;null&#9;null&#10;total_params&#9;null&#9;null&#10;APIView&#9;null&#9;null&#10;get_status&#9;null&#9;null&#10;ivm&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="D:/soltware/001]/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47.jar" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\itmsp\iservermenu\blueprint_to_workflow" />
+      <recent name="D:\project\itmsp" />
+      <recent name="D:\project\itmsp\iworkflow" />
+      <recent name="D:\project\itmsp\ivmware" />
+      <recent name="D:\project\itmsp\iconfig" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\itmsp\itmsp\utils" />
+      <recent name="D:\project\itmsp" />
+      <recent name="D:\project\itmsp\iconfig" />
+      <recent name="D:\project\itmsp\iworkflow\utils\options" />
+      <recent name="D:\project\itmsp\iworkflow" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.itmsp">
+    <configuration name="blue_engine" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="itmsp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/iconfig/blue_engine" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/iconfig/blue_engine/blue_engine.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="itmsp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="itmsp" type="Python.DjangoServer" factoryName="Django server">
+      <module name="itmsp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="itmsp.settings" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://root@118.240.13.50:22/usr/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8879" />
+      <option name="host" value="118.240.13.50" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://118.240.13.50:8879/" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.itmsp" />
+      <item itemvalue="Python.blue_engine" />
+      <item itemvalue="Python.manage" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.manage" />
+        <item itemvalue="Python.blue_engine" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6cd9ec9f-791e-44e9-8b7c-570473bdb126" name="Default" comment="" />
+      <created>1557055517854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557055517854</updated>
+    </task>
+    <task id="LOCAL-00040" summary="fix error">
+      <created>1561540615512</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1561540615512</updated>
+    </task>
+    <task id="LOCAL-00041" summary="fix error">
+      <created>1561540705668</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1561540705668</updated>
+    </task>
+    <task id="LOCAL-00042" summary="fix error">
+      <created>1561625393629</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1561625393629</updated>
+    </task>
+    <task id="LOCAL-00043" summary="fix workflow a part of error">
+      <created>1562061155104</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1562061155104</updated>
+    </task>
+    <task id="LOCAL-00044" summary="优化流程定义展示 &amp; 增加服务目录基本设置">
+      <created>1562227812378</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1562227812378</updated>
+    </task>
+    <task id="LOCAL-00045" summary="优化流程定义展示 &amp; 增加服务目录基本设置">
+      <created>1562227966912</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1562227966912</updated>
+    </task>
+    <task id="LOCAL-00046" summary="优化服务目录映射页面显示">
+      <created>1562320846700</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1562320846700</updated>
+    </task>
+    <task id="LOCAL-00047" summary="优化映射表&#10;添加参数表 &amp; 申请表 &amp; 申请数据表">
+      <created>1562496473989</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1562496473990</updated>
+    </task>
+    <task id="LOCAL-00048" summary="优化业务申请模型">
+      <created>1562550022721</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1562550022722</updated>
+    </task>
+    <task id="LOCAL-00049" summary="..">
+      <created>1562551368863</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1562551368863</updated>
+    </task>
+    <task id="LOCAL-00050" summary="优化 更新 服务目录 流程、蓝图映射、服务目录管理">
+      <created>1562655030358</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1562655030359</updated>
+    </task>
+    <task id="LOCAL-00051" summary="优化应用管理表">
+      <created>1562747203269</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1562747203269</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Merge branch 'master' of http://118.240.14.59/ops/itmsp&#10;&#10;# Conflicts:&#10;#&#9;iservermenu/models.py&#10;#&#9;ivmware/models.py">
+      <created>1562748247881</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1562748247881</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Merge branch 'master' of http://118.240.14.59/ops/itmsp&#10;&#10;# Conflicts:&#10;#&#9;iservermenu/models.py&#10;#&#9;ivmware/models.py">
+      <created>1562748797015</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1562748797015</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Merge branch 'master' of http://118.240.14.59/ops/itmsp&#10;&#10;# Conflicts:&#10;#&#9;iservermenu/models.py&#10;#&#9;ivmware/models.py">
+      <created>1562749747749</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1562749747749</updated>
+    </task>
+    <task id="LOCAL-00055" summary="应用动态选择 模糊查找">
+      <created>1562808829004</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1562808829004</updated>
+    </task>
+    <task id="LOCAL-00056" summary="添加 申请数据调用接口">
+      <created>1562854630709</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1562854630709</updated>
+    </task>
+    <task id="LOCAL-00057" summary="添加 申请  审批 匹配规则">
+      <created>1563241968384</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1563241968384</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Merge branch 'master' of http://118.240.14.59/ops/itmsp&#10;&#10;# Conflicts:&#10;#&#9;itmsp/utils/iservermenu.json">
+      <created>1563242290487</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1563242290487</updated>
+    </task>
+    <task id="LOCAL-00059" summary="更新测试数据">
+      <created>1563242737958</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1563242737958</updated>
+    </task>
+    <task id="LOCAL-00060" summary="增加匹配参数页面管理接口和更新测试数据">
+      <created>1563412392421</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1563412392421</updated>
+    </task>
+    <task id="LOCAL-00061" summary="fix error">
+      <created>1563413543005</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1563413543005</updated>
+    </task>
+    <task id="LOCAL-00062" summary="修复 参数  匹配 编辑功能">
+      <created>1563452302976</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1563452302977</updated>
+    </task>
+    <task id="LOCAL-00063" summary="1 新增 审批页面 流程接口、业务数据接口&#10;2 新增 流程中我的审批 查看申请详情 和审批详情">
+      <created>1563709179034</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1563709179034</updated>
+    </task>
+    <task id="LOCAL-00064" summary="新增保存 申请">
+      <created>1563802192661</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1563802192661</updated>
+    </task>
+    <task id="LOCAL-00065" summary="优化保存代码 提交测试数据">
+      <created>1563851507152</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1563851507152</updated>
+    </task>
+    <task id="LOCAL-00066" summary="优化保存代码 提交测试数据2">
+      <created>1563852649431</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1563852649431</updated>
+    </task>
+    <task id="LOCAL-00067" summary="优化保存代码 提交测试数据2">
+      <created>1563854288036</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1563854288036</updated>
+    </task>
+    <task id="LOCAL-00068" summary="优化保存代码 提交测试数据4">
+      <created>1563879310328</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1563879310328</updated>
+    </task>
+    <task id="LOCAL-00069" summary="新增流程和业务撤销">
+      <created>1563956703292</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1563956703293</updated>
+    </task>
+    <task id="LOCAL-00070" summary="新增流程和业务撤销">
+      <created>1564035635871</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1564035635872</updated>
+    </task>
+    <task id="LOCAL-00071" summary="重修审批 完成审批流程">
+      <created>1564059012857</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1564059012857</updated>
+    </task>
+    <task id="LOCAL-00072" summary="重修审批 完成审批流程">
+      <created>1564387032971</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1564387032971</updated>
+    </task>
+    <task id="LOCAL-00073" summary="重建初始化数据，修复匹配规则显示">
+      <created>1564387479267</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1564387479267</updated>
+    </task>
+    <task id="LOCAL-00074" summary="重建初始化数据，修复匹配规则显示">
+      <created>1564387526023</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1564387526023</updated>
+    </task>
+    <task id="LOCAL-00075" summary="增强匹配命中机制">
+      <created>1564395304822</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1564395304822</updated>
+    </task>
+    <task id="LOCAL-00076" summary="修复匹配命中机制&#10;更新初始化数据&#10;修复蓝图模块调用逻辑">
+      <created>1564450519271</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1564450519271</updated>
+    </task>
+    <task id="LOCAL-00077" summary="优化我的审批过滤逻辑">
+      <created>1564455887472</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1564455887472</updated>
+    </task>
+    <task id="LOCAL-00078" summary="修复匹配规则命中">
+      <created>1564471858371</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1564471858371</updated>
+    </task>
+    <task id="LOCAL-00079" summary="对接流程拒绝接口">
+      <created>1564480006478</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1564480006478</updated>
+    </task>
+    <task id="LOCAL-00080" summary="增加业务数据回写蓝图测试">
+      <created>1564663479059</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1564663479059</updated>
+    </task>
+    <task id="LOCAL-00081" summary="单台蓝图调用成功&#10;业务回写完成&#10;审批逻辑完成">
+      <created>1564824774534</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1564824774534</updated>
+    </task>
+    <task id="LOCAL-00082" summary="单台蓝图调用成功&#10;业务回写完成&#10;审批逻辑完成">
+      <created>1564836579183</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1564836579183</updated>
+    </task>
+    <task id="LOCAL-00083" summary="节点判断优化&#10;celery测试">
+      <created>1565006801226</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1565006801226</updated>
+    </task>
+    <task id="LOCAL-00084" summary="&#10;celery测试">
+      <created>1565007105657</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1565007105657</updated>
+    </task>
+    <task id="LOCAL-00085" summary="&#10;celery测试">
+      <created>1565007258634</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1565007258634</updated>
+    </task>
+    <task id="LOCAL-00086" summary="&#10;celery测试">
+      <created>1565007647330</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1565007647330</updated>
+    </task>
+    <task id="LOCAL-00087" summary="&#10;celery测试">
+      <created>1565009172157</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1565009172157</updated>
+    </task>
+    <task id="LOCAL-00088" summary="重构调度中心">
+      <created>1565164805532</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1565164805533</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="9" y="208" width="1311" height="870" extended-state="0" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49930555" weight="0.13061798" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50676286" side_tool="true" weight="0.20061728" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49716446" weight="0.12780899" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49323714" weight="0.059065934" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49444443" weight="0.17307693" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49861112" weight="0.035714287" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.2007722" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16988418" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" weight="0.23402777" />
+      <window_info anchor="right" id="SciView" order="5" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.53571427" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="manage.py@itmsp" order="14" weight="0.79395604" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32876712" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="14" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49323714" weight="0.059065934" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.2013889" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16988418" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49716446" visible="true" weight="0.12780899" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49930555" weight="0.13061798" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49444443" weight="0.17307693" />
+      <window_info anchor="bottom" id="manage.py@itmsp" order="14" weight="0.79395604" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.53571427" />
+      <window_info anchor="right" id="Database" order="4" weight="0.23402777" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49861112" weight="0.035714287" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50676286" side_tool="true" weight="0.20061728" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="5" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32876712" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="16" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加 申请数据调用接口" />
+    <MESSAGE value="添加 申请  审批 匹配规则" />
+    <MESSAGE value="Merge branch 'master' of http://118.240.14.59/ops/itmsp&#10;&#10;# Conflicts:&#10;#&#9;itmsp/utils/iservermenu.json" />
+    <MESSAGE value="更新测试数据" />
+    <MESSAGE value="增加匹配参数页面管理接口和更新测试数据" />
+    <MESSAGE value="fix error" />
+    <MESSAGE value="修复 参数  匹配 编辑功能" />
+    <MESSAGE value="1 新增 审批页面 流程接口、业务数据接口&#10;2 新增 流程中我的审批 查看申请详情 和审批详情" />
+    <MESSAGE value="新增保存 申请" />
+    <MESSAGE value="优化保存代码 提交测试数据" />
+    <MESSAGE value="优化保存代码 提交测试数据2" />
+    <MESSAGE value="优化保存代码 提交测试数据4" />
+    <MESSAGE value="新增流程和业务撤销" />
+    <MESSAGE value="重修审批 完成审批流程" />
+    <MESSAGE value="重建初始化数据，修复匹配规则显示" />
+    <MESSAGE value="增强匹配命中机制" />
+    <MESSAGE value="修复匹配命中机制&#10;更新初始化数据&#10;修复蓝图模块调用逻辑" />
+    <MESSAGE value="优化我的审批过滤逻辑" />
+    <MESSAGE value="修复匹配规则命中" />
+    <MESSAGE value="对接流程拒绝接口" />
+    <MESSAGE value="增加业务数据回写蓝图测试" />
+    <MESSAGE value="单台蓝图调用成功&#10;业务回写完成&#10;审批逻辑完成" />
+    <MESSAGE value="节点判断优化&#10;celery测试" />
+    <MESSAGE value="&#10;celery测试" />
+    <MESSAGE value="重构调度中心" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构调度中心" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="52" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/itmsp/utils/basegroup.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itmsp/utils/datadict.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itmsp/utils/component_manage_init.json" />
+    <entry file="file://$PROJECT_DIR$/itmsp/utils/iservermenu.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="129" column="10" selection-start-line="129" selection-start-column="10" selection-end-line="129" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iservermenu/blueprint_to_workflow/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iconfig/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/14487762/918732847/celery/states.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2067" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/14487762/918732847/celery/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ivmware/managers.py" />
+    <entry file="file://$PROJECT_DIR$/iworkflow/business/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itmsp.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itmsp/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3366">
+          <caret line="199" column="13" selection-start-line="199" selection-start-column="13" selection-end-line="199" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-1311746886/918732847/django/conf/global_settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-782">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-1311746886/918732847/django/conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding>
+            <element signature="e#257#273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-1311746886/918732847/rest_framework/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iconfig/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867">
+          <caret line="63" column="31" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iservermenu/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="106" column="12" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ivmware/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iworkflow/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iservermenu/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iconfig/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16949">
+          <caret line="37" column="38" lean-forward="true" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iconfig/blue_instance_api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itmsp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iworkflow/business/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itmsp/utils/iconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="47" column="4" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itmsp/utils/iworkflow.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="3" lean-forward="true" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itmsp/utils/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itmsp/utils/init_datadict.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iservermenu/blueprint_to_workflow/blueprint_and_workflow_mq.py.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="106" column="70" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ivmware/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="407" column="23" lean-forward="true" selection-start-line="407" selection-start-column="23" selection-end-line="407" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-1311746886/918732847/django/db/models/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iconfig/blue_instance_api/blue_instance_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iconfig/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="248" column="6" selection-start-line="248" selection-start-column="6" selection-end-line="248" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iconfig/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iconfig/blue_engine/blue_engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="101" column="17" lean-forward="true" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+          <folding>
+            <element signature="e#36#64#0" expanded="true" />
+            <element signature="e#5410#11845#0" />
+            <element signature="e#11952#13300#0" />
+            <element signature="e#13302#13316#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iservermenu/blueprint_to_workflow/blueprint_and_workflow_mq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2207">
+          <caret line="253" column="11" selection-start-line="253" selection-start-column="11" selection-end-line="253" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iuser/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iservermenu/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="93" column="6" selection-start-line="93" selection-start-column="6" selection-end-line="93" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iservermenu/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3290">
+          <caret line="586" column="17" lean-forward="true" selection-start-line="586" selection-start-column="17" selection-end-line="586" selection-end-column="17" />
+          <folding>
+            <element signature="e#44#83#0" expanded="true" />
+            <element signature="e#14737#16568#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iworkflow/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="119" column="13" selection-start-line="119" selection-start-column="4" selection-end-line="119" selection-end-column="13" />
+          <folding>
+            <element signature="e#44#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itmsp_uat.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ivmware/app_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2769">
+          <caret line="352" column="56" lean-forward="true" selection-start-line="352" selection-start-column="56" selection-end-line="352" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ivmware/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ivmware/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="140" column="14" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iworkflow/workflow/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itmsp/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#36#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
