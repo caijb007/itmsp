@@ -1,0 +1,82 @@
+[
+  {
+    "model": "iworkflow.processcategory",
+    "pk": 2,
+    "fields": {
+      "processCategoryName": "\u57fa\u7840\u8d44\u6e90",
+      "processCategoryKey": "base_resource",
+      "createTime": "2019-07-22T06:44:22.905Z",
+      "updateTime": "2019-07-22T06:44:22.906Z"
+    }
+  },
+  {
+    "model": "iworkflow.processdefinition",
+    "pk": 3,
+    "fields": {
+      "pCategoryKey": 2,
+      "processDefinitionName": "VMWare\u57fa\u7840\u8d44\u6e90\u4f9b\u5e94",
+      "processDefinitionKey": "vmwarebase_resource_supply",
+      "processNodes": 2,
+      "is_deleted": false,
+      "createTime": "2019-07-22T06:46:57.677Z",
+      "updateTime": "2019-07-24T03:16:20.174Z"
+    }
+  },
+  {
+    "model": "iworkflow.tasknode",
+    "pk": 7,
+    "fields": {
+      "pCategoryKey": 2,
+      "taskName": "VMWare\u8d44\u6e90\u751f\u6210\u7533\u8bf7",
+      "taskKey": "VMWareresource_approval",
+      "createTime": "2019-07-22T06:48:20.869Z",
+      "updateTime": "2019-07-22T06:48:20.869Z"
+    }
+  },
+  {
+    "model": "iworkflow.tasknode",
+    "pk": 8,
+    "fields": {
+      "pCategoryKey": 2,
+      "taskName": "VMWare\u8d44\u6e90\u751f\u6210\u5ba1\u6279",
+      "taskKey": "VMWare_resource_approve",
+      "createTime": "2019-07-22T06:48:56.215Z",
+      "updateTime": "2019-07-22T06:48:56.215Z"
+    }
+  },
+  {
+    "model": "iworkflow.taskdefinition",
+    "pk": 7,
+    "fields": {
+      "pDefinitionId": 3,
+      "taskName": 7,
+      "taskNode": 1,
+      "createTime": "2019-07-22T06:50:01.639Z",
+      "candidate": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "iworkflow.taskdefinition",
+    "pk": 8,
+    "fields": {
+      "pDefinitionId": 3,
+      "taskName": 8,
+      "taskNode": 2,
+      "createTime": "2019-07-22T06:50:09.447Z",
+      "candidate": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "iworkflow.businesstoprocess",
+    "pk": 1,
+    "fields": {
+      "business": 2,
+      "tables": "approve"
+    }
+  }
+]

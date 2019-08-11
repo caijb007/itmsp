@@ -1,0 +1,1200 @@
+[
+  {
+    "model": "iservermenu.servermenucategory",
+    "pk": 1,
+    "fields": {
+      "name": "\u57fa\u7840\u8d44\u6e90\u670d\u52a1",
+      "description": "ivmware",
+      "coding": "c001",
+      "on_delete": false,
+      "icon": null,
+      "groups": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "iservermenu.servermenucategory",
+    "pk": 2,
+    "fields": {
+      "name": "\u5e94\u7528\u670d\u52a1",
+      "description": null,
+      "coding": "c002",
+      "on_delete": false,
+      "icon": null,
+      "groups": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "iservermenu.servermenucategory",
+    "pk": 3,
+    "fields": {
+      "name": "\u6570\u636e\u5e93\u670d\u52a1",
+      "description": null,
+      "coding": "c003",
+      "on_delete": false,
+      "icon": null,
+      "groups": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "iservermenu.servermenucategory",
+    "pk": 4,
+    "fields": {
+      "name": "\u5176\u4ed6\u670d\u52a1",
+      "description": null,
+      "coding": "c004",
+      "on_delete": false,
+      "icon": null,
+      "groups": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "iservermenu.servers",
+    "pk": 1,
+    "fields": {
+      "name": "vmware\u865a\u62df\u673a\u8d44\u6e90\u4f9b\u5e94",
+      "description": "vmwarebase_resource_supply",
+      "coding": "s001",
+      "on_delete": false,
+      "category": 1,
+      "is_freeze": false,
+      "implement": 1,
+      "groups": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "iservermenu.servers",
+    "pk": 2,
+    "fields": {
+      "name": "\u52a8\u6001\u6269\u5bb9",
+      "description": null,
+      "coding": "s002",
+      "on_delete": false,
+      "category": 1,
+      "is_freeze": true,
+      "implement": 1,
+      "groups": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "iservermenu.servers",
+    "pk": 3,
+    "fields": {
+      "name": "\u5b58\u50a8lun\u7ba1\u7406",
+      "description": null,
+      "coding": "s003",
+      "on_delete": false,
+      "category": 1,
+      "is_freeze": false,
+      "implement": 1,
+      "groups": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "iservermenu.servers",
+    "pk": 4,
+    "fields": {
+      "name": "was\u5e94\u7528",
+      "description": null,
+      "coding": "s001",
+      "on_delete": false,
+      "category": 2,
+      "is_freeze": false,
+      "implement": 1,
+      "groups": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "iservermenu.servers",
+    "pk": 5,
+    "fields": {
+      "name": "tomcat\u5e94\u7528",
+      "description": null,
+      "coding": "s002",
+      "on_delete": false,
+      "category": 2,
+      "is_freeze": false,
+      "implement": 1,
+      "groups": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "iservermenu.pages",
+    "pk": 1,
+    "fields": {
+      "name": "\u865a\u62df\u673a\u8d44\u6e90\u7533\u8bf7\u9875\u9762",
+      "description": null,
+      "coding": "p001",
+      "on_delete": false,
+      "server": 1,
+      "page_type": 1
+    }
+  },
+  {
+    "model": "iservermenu.pages",
+    "pk": 17,
+    "fields": {
+      "name": "\u865a\u62df\u673a\u8d44\u6e90\u5ba1\u6279\u9875\u9762",
+      "description": null,
+      "coding": "p002",
+      "on_delete": false,
+      "server": 1,
+      "page_type": 1
+    }
+  },
+  {
+    "model": "iservermenu.pages",
+    "pk": 18,
+    "fields": {
+      "name": "\u865a\u62df\u673a\u8d44\u6e90\u5ba1\u6279\u8be6\u60c5\u9875\u9762",
+      "description": null,
+      "coding": "p003",
+      "on_delete": false,
+      "server": 1,
+      "page_type": 1
+    }
+  },
+  {
+    "model": "iservermenu.button",
+    "pk": 1,
+    "fields": {
+      "name": "\u865a\u62df\u673a\u8d44\u6e90\u7533\u8bf7\u9875\u9762\u7533\u8bf7\u6309\u94ae",
+      "description": null,
+      "coding": "b001",
+      "on_delete": false,
+      "page": 1,
+      "composite_code": "c001s001p001b001",
+      "button_type": 1
+    }
+  },
+  {
+    "model": "iservermenu.button",
+    "pk": 3169,
+    "fields": {
+      "name": "\u865a\u62df\u673a\u8d44\u6e90\u5ba1\u6279\u9875\u9762\u540c\u610f\u6309\u94ae",
+      "description": null,
+      "coding": "b001",
+      "on_delete": false,
+      "page": 17,
+      "composite_code": "c001s001p002b001",
+      "button_type": 1
+    }
+  },
+  {
+    "model": "iservermenu.button",
+    "pk": 3170,
+    "fields": {
+      "name": "\u865a\u62df\u673a\u8d44\u6e90\u7533\u8bf7\u9875\u9762\u4fdd\u5b58\u6309\u94ae",
+      "description": null,
+      "coding": "b002",
+      "on_delete": false,
+      "page": 1,
+      "composite_code": "c001s001p001b002",
+      "button_type": 1
+    }
+  },
+  {
+    "model": "iservermenu.button",
+    "pk": 3171,
+    "fields": {
+      "name": "\u865a\u62df\u673a\u8d44\u6e90\u7533\u8bf7\u9875\u9762\u64a4\u9500\u6309\u94ae",
+      "description": null,
+      "coding": "b003",
+      "on_delete": false,
+      "page": 1,
+      "composite_code": "c001s001p001b003",
+      "button_type": 1
+    }
+  },
+  {
+    "model": "iservermenu.button",
+    "pk": 3172,
+    "fields": {
+      "name": "\u865a\u62df\u673a\u8d44\u6e90\u5ba1\u6279\u8be6\u60c5\u9875\u9762\u91cd\u542f\u6d41\u7a0b\u6309\u94ae",
+      "description": null,
+      "coding": "b001",
+      "on_delete": false,
+      "page": 18,
+      "composite_code": "c001s001p003b001",
+      "button_type": 1
+    }
+  },
+  {
+    "model": "iservermenu.servermapwf",
+    "pk": 41,
+    "fields": {
+      "work_flow_key": "3",
+      "node_id": null,
+      "synthesize_code": null,
+      "parent_id": null,
+      "server_id": "1",
+      "page_id": null
+    }
+  },
+  {
+    "model": "iservermenu.servermapwf",
+    "pk": 42,
+    "fields": {
+      "work_flow_key": "3",
+      "node_id": 7,
+      "synthesize_code": "c001s001p001b001",
+      "parent_id": 41,
+      "server_id": "1",
+      "page_id": 1
+    }
+  },
+  {
+    "model": "iservermenu.servermapwf",
+    "pk": 43,
+    "fields": {
+      "work_flow_key": "3",
+      "node_id": 8,
+      "synthesize_code": "c001s001p002b001",
+      "parent_id": 41,
+      "server_id": "1",
+      "page_id": 17
+    }
+  },
+  {
+    "model": "iservermenu.servermapwf",
+    "pk": 49,
+    "fields": {
+      "work_flow_key": "3",
+      "node_id": null,
+      "synthesize_code": "c001s001p003b001",
+      "parent_id": 41,
+      "server_id": "1",
+      "page_id": 18
+    }
+  },
+  {
+    "model": "iservermenu.servermapbp",
+    "pk": 11,
+    "fields": {
+      "blue_print_id": 298,
+      "button_id": 3169,
+      "synthesize_code": "c001s001p002b001"
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 24,
+    "fields": {
+      "server_id": 1,
+      "params_type": "SELECT",
+      "params_purpose": "PAGE_PARAM",
+      "params_name": "env_type",
+      "params_name_display": "\u73af\u5883\u7c7b\u578b",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b",
+      "is_editable": false
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 25,
+    "fields": {
+      "server_id": 1,
+      "params_type": "SELECT",
+      "params_purpose": "PAGE_PARAM",
+      "params_name": "deploy_location",
+      "params_name_display": "\u90e8\u7f72\u5730\u70b9",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b",
+      "is_editable": false
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 26,
+    "fields": {
+      "server_id": 1,
+      "params_type": "SELECT",
+      "params_purpose": "PAGE_PARAM",
+      "params_name": "network_area",
+      "params_name_display": "\u7f51\u7edc\u533a\u57df",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b",
+      "is_editable": false
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 27,
+    "fields": {
+      "server_id": 1,
+      "params_type": "SELECT",
+      "params_purpose": "PAGE_PARAM",
+      "params_name": "system_type",
+      "params_name_display": "\u7cfb\u7edf\u7c7b\u578b",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b",
+      "is_editable": false
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 28,
+    "fields": {
+      "server_id": 1,
+      "params_type": "SELECT",
+      "params_purpose": "PAGE_PARAM",
+      "params_name": "node_type",
+      "params_name_display": "\u8282\u70b9\u7c7b\u578b",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b",
+      "is_editable": false
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 29,
+    "fields": {
+      "server_id": 1,
+      "params_type": "SELECT",
+      "params_purpose": "PAGE_PARAM",
+      "params_name": "target_cpu_cores",
+      "params_name_display": "CPU",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b",
+      "is_editable": false
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 30,
+    "fields": {
+      "server_id": 1,
+      "params_type": "SELECT",
+      "params_purpose": "PAGE_PARAM",
+      "params_name": "target_mem_gb",
+      "params_name_display": "\u5185\u5b58",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b",
+      "is_editable": false
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 31,
+    "fields": {
+      "server_id": 1,
+      "params_type": "SELECT",
+      "params_purpose": "PAGE_PARAM",
+      "params_name": "add_datadisk_gb",
+      "params_name_display": "\u7a7a\u95f4\u9700\u6c42",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b \u6574\u6570",
+      "is_editable": false
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 32,
+    "fields": {
+      "server_id": 1,
+      "params_type": "STR",
+      "params_purpose": "INTERFACE_PARAM",
+      "params_name": "template",
+      "params_name_display": "\u6a21\u677f",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b",
+      "is_editable": true
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 33,
+    "fields": {
+      "server_id": 1,
+      "params_type": "STR",
+      "params_purpose": "INTERFACE_PARAM",
+      "params_name": "network",
+      "params_name_display": "\u7f51\u7edc",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b",
+      "is_editable": true
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 34,
+    "fields": {
+      "server_id": 1,
+      "params_type": "STR",
+      "params_purpose": "INTERFACE_PARAM",
+      "params_name": "vc_ip",
+      "params_name_display": "vc_ip",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b",
+      "is_editable": true
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 35,
+    "fields": {
+      "server_id": 1,
+      "params_type": "STR",
+      "params_purpose": "INTERFACE_PARAM",
+      "params_name": "vc_user",
+      "params_name_display": "vc_user",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b",
+      "is_editable": true
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 36,
+    "fields": {
+      "server_id": 1,
+      "params_type": "STR",
+      "params_purpose": "INTERFACE_PARAM",
+      "params_name": "vc_passwd",
+      "params_name_display": "vc_passwd",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b",
+      "is_editable": true
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 37,
+    "fields": {
+      "server_id": 1,
+      "params_type": "STR",
+      "params_purpose": "INTERFACE_PARAM",
+      "params_name": "unit",
+      "params_name_display": "\u6240\u5c5e\u5355\u4f4d",
+      "param_option": "OrderedDict()",
+      "param_comment": "\u5fc5\u586b",
+      "is_editable": true
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 38,
+    "fields": {
+      "server_id": 1,
+      "params_type": "SELECT",
+      "params_purpose": "PAGE_PARAM",
+      "params_name": "netmask",
+      "params_name_display": "\u63a9\u7801",
+      "param_option": "OrderedDict()",
+      "param_comment": null,
+      "is_editable": false
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 39,
+    "fields": {
+      "server_id": 1,
+      "params_type": "INPUT",
+      "params_purpose": "PAGE_PARAM",
+      "params_name": "gateway",
+      "params_name_display": "\u7f51\u5173",
+      "param_option": "OrderedDict()",
+      "param_comment": null,
+      "is_editable": false
+    }
+  },
+  {
+    "model": "iservermenu.serverparams",
+    "pk": 40,
+    "fields": {
+      "server_id": 1,
+      "params_type": "INPUT",
+      "params_purpose": "PAGE_PARAM",
+      "params_name": "dns",
+      "params_name_display": "dns",
+      "param_option": "OrderedDict()",
+      "param_comment": null,
+      "is_editable": false
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 61,
+    "fields": {
+      "param_id": 24,
+      "param_ins": 24,
+      "param_value_name": "\u5f00\u53d1\u73af\u5883",
+      "param_value_tag_name": "DEVP"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 62,
+    "fields": {
+      "param_id": 24,
+      "param_ins": 24,
+      "param_value_name": "\u6d4b\u8bd5\u73af\u5883",
+      "param_value_tag_name": "TEST"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 63,
+    "fields": {
+      "param_id": 24,
+      "param_ins": 24,
+      "param_value_name": "\u751f\u4ea7\u73af\u5883",
+      "param_value_tag_name": "PROD"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 64,
+    "fields": {
+      "param_id": 25,
+      "param_ins": 25,
+      "param_value_name": "\u6df1\u5733\u8f66\u516c\u5e99",
+      "param_value_tag_name": "SZ_CGM"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 65,
+    "fields": {
+      "param_id": 25,
+      "param_ins": 25,
+      "param_value_name": "\u9999\u6e2fMC1",
+      "param_value_tag_name": "HK_MC1"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 66,
+    "fields": {
+      "param_id": 25,
+      "param_ins": 25,
+      "param_value_name": "\u9999\u6e2fTower",
+      "param_value_tag_name": "HK_Tower"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 67,
+    "fields": {
+      "param_id": 26,
+      "param_ins": 26,
+      "param_value_name": "\u5185\u7f51\u533a\u57df",
+      "param_value_tag_name": "intranet"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 68,
+    "fields": {
+      "param_id": 26,
+      "param_ins": 26,
+      "param_value_name": "\u5916\u8054\u533a\u57df",
+      "param_value_tag_name": "DMZ_extranet"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 69,
+    "fields": {
+      "param_id": 26,
+      "param_ins": 26,
+      "param_value_name": "\u4e92\u8054\u7f51\u533a",
+      "param_value_tag_name": "DMZ_internet"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 70,
+    "fields": {
+      "param_id": 27,
+      "param_ins": 27,
+      "param_value_name": "SUSE Linux Enterprise Server 12 SP3",
+      "param_value_tag_name": "SUSE Linux Enterprise Server 12 SP3"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 71,
+    "fields": {
+      "param_id": 27,
+      "param_ins": 27,
+      "param_value_name": "SUSE Linux Enterprise Server 11 SP4",
+      "param_value_tag_name": "SUSE Linux Enterprise Server 11 SP4"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 72,
+    "fields": {
+      "param_id": 27,
+      "param_ins": 27,
+      "param_value_name": "Windows Server 2012 R2  English",
+      "param_value_tag_name": "Windows Server 2012 R2  English"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 73,
+    "fields": {
+      "param_id": 27,
+      "param_ins": 27,
+      "param_value_name": "Windows Server 2012 R2  Chinese-Simplified",
+      "param_value_tag_name": "Windows Server 2012 R2  Chinese-Simplified"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 74,
+    "fields": {
+      "param_id": 28,
+      "param_ins": 28,
+      "param_value_name": "web\u670d\u52a1\u5668",
+      "param_value_tag_name": "web"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 75,
+    "fields": {
+      "param_id": 28,
+      "param_ins": 28,
+      "param_value_name": "\u5e94\u7528\u670d\u52a1\u5668",
+      "param_value_tag_name": "app"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 76,
+    "fields": {
+      "param_id": 28,
+      "param_ins": 28,
+      "param_value_name": "\u6570\u636e\u5e93\u670d\u52a1\u5668",
+      "param_value_tag_name": "db"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 77,
+    "fields": {
+      "param_id": 28,
+      "param_ins": 28,
+      "param_value_name": "\u5176\u5b83",
+      "param_value_tag_name": "other"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 78,
+    "fields": {
+      "param_id": 29,
+      "param_ins": 29,
+      "param_value_name": "2CPU",
+      "param_value_tag_name": "2"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 79,
+    "fields": {
+      "param_id": 29,
+      "param_ins": 29,
+      "param_value_name": "4CPU",
+      "param_value_tag_name": "4"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 80,
+    "fields": {
+      "param_id": 29,
+      "param_ins": 29,
+      "param_value_name": "8CPU",
+      "param_value_tag_name": "8"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 81,
+    "fields": {
+      "param_id": 30,
+      "param_ins": 30,
+      "param_value_name": "4G",
+      "param_value_tag_name": "4"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 82,
+    "fields": {
+      "param_id": 30,
+      "param_ins": 30,
+      "param_value_name": "8G",
+      "param_value_tag_name": "8"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 83,
+    "fields": {
+      "param_id": 30,
+      "param_ins": 30,
+      "param_value_name": "16G",
+      "param_value_tag_name": "16"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 85,
+    "fields": {
+      "param_id": 31,
+      "param_ins": 31,
+      "param_value_name": "50G",
+      "param_value_tag_name": "50"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 86,
+    "fields": {
+      "param_id": 32,
+      "param_ins": 32,
+      "param_value_name": "template_suse12sp3_base",
+      "param_value_tag_name": "template_linux"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 87,
+    "fields": {
+      "param_id": 33,
+      "param_ins": 33,
+      "param_value_name": "118.240.13.0/24",
+      "param_value_tag_name": "118.240.13.0/24"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 88,
+    "fields": {
+      "param_id": 34,
+      "param_ins": 34,
+      "param_value_name": "118.240.51.241",
+      "param_value_tag_name": "sz_vc"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 90,
+    "fields": {
+      "param_id": 35,
+      "param_ins": 35,
+      "param_value_name": "administrator@vsphere.local",
+      "param_value_tag_name": "sz_vc"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 91,
+    "fields": {
+      "param_id": 35,
+      "param_ins": 35,
+      "param_value_name": "administrator@vsphere.local",
+      "param_value_tag_name": "hk_vc"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 92,
+    "fields": {
+      "param_id": 36,
+      "param_ins": 36,
+      "param_value_name": "1qaz@WSX",
+      "param_value_tag_name": "sz_vc"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 93,
+    "fields": {
+      "param_id": 36,
+      "param_ins": 36,
+      "param_value_name": "1qaz@WSX",
+      "param_value_tag_name": "hk_vc"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 94,
+    "fields": {
+      "param_id": 37,
+      "param_ins": 37,
+      "param_value_name": "\u5de5\u94f6\u4e9a\u6d32",
+      "param_value_tag_name": "gyyz"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 95,
+    "fields": {
+      "param_id": 37,
+      "param_ins": 37,
+      "param_value_name": "\u5de5\u5546\u94f6\u884c",
+      "param_value_tag_name": "icbc"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 96,
+    "fields": {
+      "param_id": 38,
+      "param_ins": 38,
+      "param_value_name": "24",
+      "param_value_tag_name": "118.240.13.0"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 97,
+    "fields": {
+      "param_id": 39,
+      "param_ins": 39,
+      "param_value_name": "118.240.13.254",
+      "param_value_tag_name": "118.240.13.0"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 98,
+    "fields": {
+      "param_id": 40,
+      "param_ins": 40,
+      "param_value_name": "118.240.33.13",
+      "param_value_tag_name": "dns1"
+    }
+  },
+  {
+    "model": "iservermenu.serverparamvalues",
+    "pk": 99,
+    "fields": {
+      "param_id": 40,
+      "param_ins": 40,
+      "param_value_name": "80.240.33.13",
+      "param_value_tag_name": "dns2"
+    }
+  },
+  {
+    "model": "iservermenu.primaryapplication",
+    "pk": 1,
+    "fields": {
+      "number": 1,
+      "local_app_number": "s0068",
+      "app_short_name": "BF-IMP (ICBCAS)",
+      "app_name": "\u7efc\u5408\u7ba1\u7406\u5e73\u53f0",
+      "recovery_sys_level": "5+",
+      "application_level": "",
+      "deploy_location": "HKG - MC1",
+      "ITOMer": "Ernest",
+      "develop_group": "SDS1",
+      "full_time_service": false,
+      "system_app_source": "",
+      "outsourcing_company": "",
+      "operation_lead_department": "",
+      "cooperate_department": "",
+      "institution_department": "",
+      "user_permission_department": "",
+      "app_introduction": ""
+    }
+  },
+  {
+    "model": "iservermenu.primaryapplication",
+    "pk": 2,
+    "fields": {
+      "number": 2,
+      "local_app_number": "S0001",
+      "app_short_name": "BF-RMDPS (ICBCAS)",
+      "app_name": "\u62a5\u8868\u5c55\u793a\u5e73\u53f0",
+      "recovery_sys_level": "5",
+      "application_level": "",
+      "deploy_location": "SZ",
+      "ITOMer": "",
+      "develop_group": "",
+      "full_time_service": false,
+      "system_app_source": "",
+      "outsourcing_company": "",
+      "operation_lead_department": "",
+      "cooperate_department": "",
+      "institution_department": "",
+      "user_permission_department": "",
+      "app_introduction": ""
+    }
+  },
+  {
+    "model": "iservermenu.primaryapplication",
+    "pk": 3,
+    "fields": {
+      "number": 3,
+      "local_app_number": "S0002",
+      "app_short_name": "BF-OCS (ICBCAS)",
+      "app_name": "\u63d0\u51fa\u652f\u7968\u6e05\u7b97",
+      "recovery_sys_level": "5",
+      "application_level": "",
+      "deploy_location": "HKG - MC1",
+      "ITOMer": "",
+      "develop_group": "",
+      "full_time_service": false,
+      "system_app_source": "",
+      "outsourcing_company": "",
+      "operation_lead_department": "",
+      "cooperate_department": "",
+      "institution_department": "",
+      "user_permission_department": "",
+      "app_introduction": ""
+    }
+  },
+  {
+    "model": "iservermenu.primaryapplication",
+    "pk": 4,
+    "fields": {
+      "number": 4,
+      "local_app_number": "S0102",
+      "app_short_name": "BF-EBPP (ICBCAS)",
+      "app_name": "\u5408\u4f5c\u65b9\u4e1a\u52a1\u5904\u7406\u5e73\u53f0",
+      "recovery_sys_level": "5+",
+      "application_level": "",
+      "deploy_location": "HKG - Tower",
+      "ITOMer": "\u5468\u82b3",
+      "develop_group": "",
+      "full_time_service": false,
+      "system_app_source": "",
+      "outsourcing_company": "",
+      "operation_lead_department": "",
+      "cooperate_department": "",
+      "institution_department": "",
+      "user_permission_department": "",
+      "app_introduction": ""
+    }
+  },
+  {
+    "model": "iservermenu.primaryapplication",
+    "pk": 5,
+    "fields": {
+      "number": 5,
+      "local_app_number": "S0109",
+      "app_short_name": "BF-BRRS (ICBCAS)",
+      "app_name": "\u94f6\u884c\u7533\u62a5\u62a5\u8868\u7cfb\u7edf",
+      "recovery_sys_level": "3",
+      "application_level": "",
+      "deploy_location": "HKG-MC1",
+      "ITOMer": "",
+      "develop_group": "",
+      "full_time_service": false,
+      "system_app_source": "",
+      "outsourcing_company": "",
+      "operation_lead_department": "",
+      "cooperate_department": "",
+      "institution_department": "",
+      "user_permission_department": "",
+      "app_introduction": ""
+    }
+  },
+  {
+    "model": "iservermenu.secondaryapplication",
+    "pk": 1,
+    "fields": {
+      "parent_app": 1,
+      "local_app_number": "s0068",
+      "app_short_name": "S0069 BF-ATMCR(ICBCAS)",
+      "app_name": "ATM\u73b0\u91d1\u6e05\u673a\u7cfb\u7edf ATM Cash Replenishment Processing System",
+      "recovery_sys_level": "5+",
+      "application_level": "",
+      "deploy_location": "HKG - MC1",
+      "ITOMer": "Ernest",
+      "develop_group": "SDS1",
+      "full_time_service": false,
+      "system_app_source": "",
+      "outsourcing_company": "",
+      "operation_lead_department": "",
+      "cooperate_department": "",
+      "institution_department": "",
+      "user_permission_department": "",
+      "app_introduction": ""
+    }
+  },
+  {
+    "model": "iservermenu.secondaryapplication",
+    "pk": 2,
+    "fields": {
+      "parent_app": 1,
+      "local_app_number": "S0077",
+      "app_short_name": "BF-RAF(ICBCAS)",
+      "app_name": "\u81ea\u52a8\u5316\u5ba2\u6237\u6d17\u94b1\u98ce\u9669\u8bc4\u4f30\u7cfb\u7edf",
+      "recovery_sys_level": "",
+      "application_level": "",
+      "deploy_location": "",
+      "ITOMer": "",
+      "develop_group": "",
+      "full_time_service": false,
+      "system_app_source": "",
+      "outsourcing_company": "",
+      "operation_lead_department": "",
+      "cooperate_department": "",
+      "institution_department": "",
+      "user_permission_department": "",
+      "app_introduction": ""
+    }
+  },
+  {
+    "model": "iservermenu.servermatchingrule",
+    "pk": 92,
+    "fields": {
+      "param_id": 34,
+      "param_of_server_id": 1,
+      "param_value_id": "[88]",
+      "comment": "OrderedDict()",
+      "param_matching_pattern": "AND"
+    }
+  },
+  {
+    "model": "iservermenu.servermatchingrule",
+    "pk": 93,
+    "fields": {
+      "param_id": 33,
+      "param_of_server_id": 1,
+      "param_value_id": "[87]",
+      "comment": "OrderedDict()",
+      "param_matching_pattern": "AND"
+    }
+  },
+  {
+    "model": "iservermenu.servermatchingrule",
+    "pk": 94,
+    "fields": {
+      "param_id": 32,
+      "param_of_server_id": 1,
+      "param_value_id": "[86]",
+      "comment": "OrderedDict()",
+      "param_matching_pattern": "AND"
+    }
+  },
+  {
+    "model": "iservermenu.servermatchingrule",
+    "pk": 96,
+    "fields": {
+      "param_id": 33,
+      "param_of_server_id": 1,
+      "param_value_id": "[87]",
+      "comment": "OrderedDict()",
+      "param_matching_pattern": "AND"
+    }
+  },
+  {
+    "model": "iservermenu.servermatchingrule",
+    "pk": 97,
+    "fields": {
+      "param_id": 32,
+      "param_of_server_id": 1,
+      "param_value_id": "[86]",
+      "comment": "OrderedDict()",
+      "param_matching_pattern": "AND"
+    }
+  },
+  {
+    "model": "iservermenu.matchedcondition",
+    "pk": 39,
+    "fields": {
+      "matching_rule": 92,
+      "matching_param": 24,
+      "matching_param_value_id": 61,
+      "comment": "OrderedDict()"
+    }
+  },
+  {
+    "model": "iservermenu.matchedcondition",
+    "pk": 40,
+    "fields": {
+      "matching_rule": 92,
+      "matching_param": 25,
+      "matching_param_value_id": 64,
+      "comment": "OrderedDict()"
+    }
+  },
+  {
+    "model": "iservermenu.matchedcondition",
+    "pk": 41,
+    "fields": {
+      "matching_rule": 93,
+      "matching_param": 24,
+      "matching_param_value_id": 61,
+      "comment": "OrderedDict()"
+    }
+  },
+  {
+    "model": "iservermenu.matchedcondition",
+    "pk": 42,
+    "fields": {
+      "matching_rule": 93,
+      "matching_param": 25,
+      "matching_param_value_id": 64,
+      "comment": "OrderedDict()"
+    }
+  },
+  {
+    "model": "iservermenu.matchedcondition",
+    "pk": 45,
+    "fields": {
+      "matching_rule": 94,
+      "matching_param": 27,
+      "matching_param_value_id": 71,
+      "comment": "OrderedDict()"
+    }
+  },
+  {
+    "model": "iservermenu.matchedcondition",
+    "pk": 48,
+    "fields": {
+      "matching_rule": 96,
+      "matching_param": 24,
+      "matching_param_value_id": 63,
+      "comment": "OrderedDict()"
+    }
+  },
+  {
+    "model": "iservermenu.matchedcondition",
+    "pk": 49,
+    "fields": {
+      "matching_rule": 96,
+      "matching_param": 25,
+      "matching_param_value_id": 65,
+      "comment": "OrderedDict()"
+    }
+  },
+  {
+    "model": "iservermenu.matchedcondition",
+    "pk": 50,
+    "fields": {
+      "matching_rule": 97,
+      "matching_param": 27,
+      "matching_param_value_id": 70,
+      "comment": "OrderedDict()"
+    }
+  }
+]

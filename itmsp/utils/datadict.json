@@ -1,0 +1,143 @@
+[
+  {
+    "fields": {
+      "name": "env_type",
+      "setting_type": "OPTION",
+      "app": "ovm",
+      "value": "DEVP",
+      "ext_attr": {
+        "vm_prefix": "d"
+      },
+      "display": "\u5f00\u53d1\u73af\u5883"
+    },
+    "model": "itmsp.datadict",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "name": "env_type",
+      "setting_type": "OPTION",
+      "app": "ovm",
+      "value": "TEST",
+      "ext_attr": {
+        "vm_prefix": "t"
+      },
+      "display": "\u6d4b\u8bd5\u73af\u5883"
+    },
+    "model": "itmsp.datadict",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "name": "env_type",
+      "setting_type": "OPTION",
+      "app": "ovm",
+      "value": "PROD",
+      "ext_attr": {
+        "vm_prefix": "p"
+      },
+      "display": "\u751f\u4ea7\u73af\u5883"
+    },
+    "model": "itmsp.datadict",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "name": "env_type",
+      "setting_type": "OPTION",
+      "app": "ovm",
+      "value": "DRCV",
+      "ext_attr": {
+        "vm_prefix": "p"
+      },
+      "display": "\u707e\u5907\u73af\u5883"
+    },
+    "model": "itmsp.datadict",
+    "pk": 4
+  },
+  {
+    "fields": {
+      "name": "datacenter",
+      "setting_type": "OPTION",
+      "app": "ovm",
+      "value": "CG",
+      "ext_attr": {
+        "vm_prefix": "CG",
+        "ip_pattern": "118.240"
+      },
+      "display": "\u8f66\u516c\u5e99"
+    },
+    "model": "itmsp.datadict",
+    "pk": 5
+  },
+  {
+    "fields": {
+      "name": "datacenter",
+      "setting_type": "OPTION",
+      "app": "ovm",
+      "value": "DF",
+      "ext_attr": {
+        "vm_prefix": "DF",
+        "ip_pattern": "118.241"
+      },
+      "display": "\u4e1c\u98ce"
+    },
+    "model": "itmsp.datadict",
+    "pk": 6
+  },
+  {
+    "fields": {
+      "name": "os_version",
+      "setting_type": "OPTION",
+      "app": "ovm",
+      "value": "sles11_64Guest",
+      "ext_attr": "{u'os_type': u'Linux'}",
+      "display": "SUSE Linux Enterprise 11 (64 \u4f4d)"
+    },
+    "model": "itmsp.datadict",
+    "pk": 7
+  },
+  {
+    "fields": {
+      "name": "os_version",
+      "setting_type": "OPTION",
+      "app": "ovm",
+      "value": "centos64Guest",
+      "ext_attr": "{u'os_type': u'Linux'}",
+      "display": "CentOS 4/5/6/7 (64 \u4f4d)"
+    },
+    "model": "itmsp.datadict",
+    "pk": 8
+  },
+  {
+    "fields": {
+      "name": "os_version",
+      "setting_type": "OPTION",
+      "app": "ovm",
+      "value": "windows7Server64Guest",
+      "ext_attr": "{u'os_type': u'Windows'}",
+      "display": "Microsoft Windows Server 2008 R2 (64 \u4f4d)"
+    },
+    "model": "itmsp.datadict",
+    "pk": 9
+  },
+  {
+    "fields": {
+      "name": "os_version",
+      "setting_type": "OPTION",
+      "app": "ovm",
+      "value": "winNetEnterpriseGuest",
+      "ext_attr": "{u'os_type': u'Windows'}",
+      "display": "Microsoft Windows Server 2003 (32 \u4f4d)"
+    },
+    "model": "itmsp.datadict",
+    "pk": 10
+  },
+  {"model": "itmsp.datadict", "pk": 1,"fields": {"app": "itmsp", "setting_type": "OPTION", "name": "catalogue", "value": "M0", "display": "\u6839\u76ee\u5f55", "ext_attr": {}}}, 
+ {"model": "itmsp.datadict", "pk": 2, "fields": {"app": "itmsp", "setting_type": "OPTION", "name": "catalogue", "value": "M002", "display": "\u7528\u6237\u7ba1\u7406", "ext_attr": {"parent": "M0"}}}, 
+ {"model": "itmsp.datadict","pk": 3, "fields": {"app": "itmsp", "setting_type": "OPTION", "name": "catalogue", "value": "M003", "display": "\u4e91\u670d\u52a1\u7ba1\u7406", "ext_attr": {"parent": "M0"}}}, 
+     {"model": "itmsp.datadict", "pk": 4, "fields": {"app": "itmsp", "setting_type": "OPTION", "name": "menu", "value": "I00201", "display": "\u7528\u6237\u914d\u7f6e", "ext_attr": {"parent": "M002"}}}, 
+     {"model": "itmsp.datadict", "pk": 5, "fields": {"app": "itmsp", "setting_type": "OPTION", "name": "menu", "value": "I00202", "display": "\u7528\u6237\u7ec4\u914d\u7f6e", "ext_attr": {"parent": "M002"}}}, 
+     {"model": "itmsp.datadict", "pk": 6, "fields": {"app": "itmsp", "setting_type": "OPTION", "name": "menu", "value": "I00301", "display": "\u4e91\u670d\u52a1\u64cd\u4f5c", "ext_attr": {"parent": "M002"}}}, 
+     {"model": "itmsp.datadict", "pk": 7, "fields": {"app": "itmsp", "setting_type": "OPTION", "name": "menu", "value": "I00302", "display": "\u4e91\u670d\u52a1\u64cd\u4f5c", "ext_attr": {"parent": "M002"}}}
+]

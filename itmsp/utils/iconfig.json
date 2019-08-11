@@ -1,0 +1,391 @@
+[
+  {
+    "model": "iconfig.bluecomponentcategory",
+    "pk": 1,
+    "fields": {
+      "description": "\u57fa\u7840\u8d44\u6e90\u670d\u52a1",
+      "create_time": "2019-08-05T02:03:09.646Z",
+      "update_time": "2019-08-05T02:03:09.646Z"
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamgroupcategory",
+    "pk": 1,
+    "fields": {
+      "name": "\u57fa\u7840\u8d44\u6e90\u670d\u52a1",
+      "color": "#F0D"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententitydefinition",
+    "pk": 1,
+    "fields": {
+      "name": "vmware\u865a\u62df\u673a\u8d44\u6e90\u4f9b\u5e94",
+      "description": "vmware\u865a\u62df\u673a\u8d44\u6e90\u4f9b\u5e94",
+      "is_freeze": false,
+      "is_component": false,
+      "create_time": "2019-08-05T02:03:28.207Z",
+      "update_time": "2019-08-05T02:03:28.207Z"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 1,
+    "fields": {
+      "param_name": "vc_ip",
+      "data_type": "str",
+      "description": "vCenter Ip"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 2,
+    "fields": {
+      "param_name": "vc_user",
+      "data_type": "str",
+      "description": "vCenter User"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 3,
+    "fields": {
+      "param_name": "vc_passwd",
+      "data_type": "str",
+      "description": "vCenter Pwd"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 4,
+    "fields": {
+      "param_name": "vm_name",
+      "data_type": "str",
+      "description": "\u865a\u62df\u673a\u540d\u79f0"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 5,
+    "fields": {
+      "param_name": "vm_ip",
+      "data_type": "str",
+      "description": "\u865a\u62df\u673aIp"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 6,
+    "fields": {
+      "param_name": "datastore_name",
+      "data_type": "str",
+      "description": "\u5b58\u50a8\u540d\u79f0"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 7,
+    "fields": {
+      "param_name": "cluster_name",
+      "data_type": "str",
+      "description": "\u96c6\u7fa4\u540d\u79f0"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 8,
+    "fields": {
+      "param_name": "datacenter_name",
+      "data_type": "str",
+      "description": "\u6570\u636e\u4e2d\u5fc3\u540d\u79f0"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 9,
+    "fields": {
+      "param_name": "template_name",
+      "data_type": "str",
+      "description": "\u6a21\u677f\u540d\u79f0"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 10,
+    "fields": {
+      "param_name": "hostsystem_name",
+      "data_type": "str",
+      "description": "\u4e3b\u673a\u540d\u79f0"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 11,
+    "fields": {
+      "param_name": "network",
+      "data_type": "str",
+      "description": "\u7f51\u7edc\u540d\u79f0"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 12,
+    "fields": {
+      "param_name": "gateway",
+      "data_type": "str",
+      "description": "\u7f51\u5173"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 13,
+    "fields": {
+      "param_name": "subnetMask",
+      "data_type": "str",
+      "description": "\u63a9\u7801"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 14,
+    "fields": {
+      "param_name": "dns",
+      "data_type": "str",
+      "description": "dns"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 15,
+    "fields": {
+      "param_name": "apply_user",
+      "data_type": "str",
+      "description": "\u7533\u8bf7\u7528\u6237"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 16,
+    "fields": {
+      "param_name": "application",
+      "data_type": "str",
+      "description": "\u5e94\u7528\u540d\u79f0"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 17,
+    "fields": {
+      "param_name": "env_type",
+      "data_type": "str",
+      "description": "\u73af\u5883\u7c7b\u578b"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 18,
+    "fields": {
+      "param_name": "expiration",
+      "data_type": "str",
+      "description": "\u8fc7\u671f\u65f6\u95f4"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 19,
+    "fields": {
+      "param_name": "target_cpu_cores",
+      "data_type": "int",
+      "description": "CPU\u6838\u5fc3\u6570"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 20,
+    "fields": {
+      "param_name": "target_mem_gb",
+      "data_type": "int",
+      "description": "\u5185\u5b58\u5927\u5c0f"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 21,
+    "fields": {
+      "param_name": "add_datadisk_gb",
+      "data_type": "int",
+      "description": "\u65b0\u589e\u786c\u76d8\u5927\u5c0f"
+    }
+  },
+  {
+    "model": "iconfig.bluecomponententityparam",
+    "pk": 22,
+    "fields": {
+      "param_name": "node_type",
+      "data_type": "str",
+      "description": "\u8282\u70b9\u7c7b\u578b"
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamgroup",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "access_module_key": "vmware\u865a\u62df\u673a\u8d44\u6e90\u4f9b\u5e94"
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 1,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 2,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 3,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 4,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 5,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 6,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 7,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 8,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 9,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 10,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 11,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 12,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 13,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 14,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 15,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 16,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 17,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 18,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 19,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 20,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 21,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  },
+  {
+    "model": "iconfig.blueaccessmoduleparamsgroupparam",
+    "pk": 22,
+    "fields": {
+      "blue_access_module_group": 1
+    }
+  }
+]
