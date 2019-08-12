@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'pip install -r requirements.txt'
+        sh 'pip install -i http://mirrors.aliyun.com/pypi/simple/ -r requirements.txt'
       }
     }
   }
