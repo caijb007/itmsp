@@ -48,7 +48,7 @@ pytz==2016.3
 pyudev==0.15
 pyvmomi==6.0.0.2016.4
 pyxattr==0.5.1
-PyYAML==3.10
+PyYAML==5.4
 redis==2.10.6
 registries==0.1
 requests==2.22.0
