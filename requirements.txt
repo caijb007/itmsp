@@ -30,7 +30,7 @@ kombu==3.0.37
 MarkupSafe==0.9.3
 meld3==1.0.2
 MySQL-python==1.2.5
-paramiko==1.17.4
+paramiko==2.10.1
 perf==0.1
 pip2pi==0.7.0
 policycoreutils-default-encoding==0.1
