@@ -59,7 +59,7 @@ singledispatch==3.4.0.3
 six==1.10.0
 slip==0.4.0
 slip.dbus==0.4.0
-supervisor==3.3.1
+supervisor==3.3.3
 tornado==4.3
 urlgrabber==3.10
 urllib3==1.22
